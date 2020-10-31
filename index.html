@@ -1,0 +1,226 @@
+<style>
+	/*вот так ставятся комментарии внутри style*/
+	/*1 див родитель(шапка) */
+	.header{background-color: grey; height: 100px;}
+	.header-center{ height: 95px; width: 1000px;margin-left: auto; margin-right: auto;display: flex; }
+	.box-logo{background-color: grey; width: 250px; height: 95px;}
+	.box-links{background-color: grey; width: 600px; height: 65px;padding-top: 30px; }
+	.box-buttons{background-color: grey; width: 150px; height: 95px;}
+	.billboard-logo{width: 250px; margin-top: 10px}
+	.A{color: white; text-decoration: none; font-size: 30; margin-left: 40px; font-family: arial}
+	.subscribe{color: white; background-color: purple; height: 30px; width: 100px; margin-left: 20px; margin-top: 30px; border-radius: 7px; border: 0px}
+	/*2 див родитель (основа)*/
+	.charts-conatiner{width: 1000px; height: 1200px; margin-left: auto; margin-right: auto;}
+	.charts-sort{height: 100px;}
+	.charts-up{background-color: #20bd9b; height: 150px; margin-top: 10px; border-radius: 10px; display: flex;}
+	.charts-new{background-color: beige; height: 150px; margin-top: 10px; border-radius: 10px; display: flex;}
+	.charts-down{background-color: pink; height: 150px; margin-top: 10px; display: flex;}
+	.charts-rank{ height: 150px; width: 150px;}
+	.charts-info{height: 150px; width: 450px;}
+	.charts-button{ height: 150px; width: 250px;}
+	.charts-img{ height: 150px; width: 150px;}
+	.button{background-color: orange; margin-top: 30px; width: 100px; height: 30px; border-radius: 3px; border: 0px; color: white; margin-left: 10px;}
+	.number{font-family: arial; margin-left: 60px; font-size: 50}
+	.up{color: blue; margin-left: 60px; font-size: 20; font-family: arial}
+	.info{color: blue; font-family: arial; font-size: 25}
+	.name{color: grey; font-family: arial}
+	.buy{background-color: red; color: white; width: 100px; height: 30px; margin-left: 70px; margin-top: 30px; border-radius: 5px; border: 0px}
+	.img{height: 150px}
+</style>
+<!-- 1 уровень. шапка -->
+<div class="header">
+	<!-- 2 уровень. выравнивание шапки -->
+	<div class="header-center">
+		<!-- 3 уровень -->
+		<!-- лого -->
+		<div class="box-logo">
+			<img src="billboard.svg" class="billboard-logo">
+		</div>
+		<!-- ссылки -->
+		<div class="box-links">
+			<a href="" class="A">Charts</a>
+			<a href="" class="A">News</a>
+			<a href="" class="A">Video</a>
+			<a href="" class="A">Photos</a>
+		</div>
+		<!-- кнопка подписаться -->
+		<div class="box-buttons">
+			<BUTTON class="subscribe">Subscibe</BUTTON>
+		</div>
+	</div>
+</div>
+
+<!-- 1 уровень. чат-контейнер -->
+<div class="charts-conatiner">
+	<!-- 2 уровень -->
+	<!-- для кнопок сортировки -->
+	<div class="charts-sort">
+		<button class="button">This week</button>
+		<button class="button">Last week</button>
+		<button class="button">Peak</button>
+		<button class="button">Duration</button>
+	</div>
+	<!--все треки в чарте -->
+
+	<!-- трек up -->
+	<div class="charts-up">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<h1 class="number">1</h1>
+			<p class="up">Up</p>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<h1 class="info">Savage Love (Laxed - Siren Beat)</h1>
+			<p class="name">Jaws 685 x Jason Durulo x BTS </p>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="buy">Купить</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img src="Savage.jpg" class="img">
+		</div>
+	</div>
+
+	<!-- трек new -->
+	<div class="charts-new">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<h1 class="number">2</h1>
+			<p class="up">New</p>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<h1 class="info">Dynamite</h1>
+			<p class="name">BTS</p>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button"> 
+			<button class="buy">Купить</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img src="dynamite.png" class="img">
+		</div>		
+	</div>
+
+	<!-- трек new -->
+	<div class="charts-new">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<h1 class="number">3</h1>
+			<p class="up">New</p>
+		</div >
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<h1 class="info">WAP</h1>
+			<p class="name">Cardi B featuring Megan The Stallion</p>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="buy">Купить</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img src="wap.png" class="img">
+		</div>		
+	</div>
+
+	<!-- трек up -->
+	<div class="charts-up">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<h1 class="number">4</h1>
+			<p class="up">Up</p>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<h1 class="info">Mood</h1>
+			<p class="name">24KGolden featuring lann dior</p>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="buy">Купить</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img src="mood.png" class="img">
+		</div>		
+	</div>
+
+	<!-- трек down -->
+	<div class="charts-down">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<h1 class="number">5</h1>
+			<p class="up">Down</p>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<h1 class="info">Laught Now Cry Later</h1>
+			<p class="name">Drake featuring Lil Durk</p>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="buy">Купить</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img src="drake.jpg" class="img">
+		</div>		
+	</div>
+
+	<!-- трек new -->
+	<div class="charts-new">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<h1 class="number">6</h1>
+			<p class="up">New</p>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<h1 class="info">Blinding Lights</h1>
+			<p class="name">The Weekeng</p>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="buy">Купить</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img src="light.jpg" class="img">
+		</div>		
+	</div>
+
+	<!-- трек up -->
+	<div class="charts-up">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<h1 class="number">7</h1>
+			<p class="up">Up</p>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<h1 class="info">Rockstar</h1>
+			<p class="name">DaBaby Featuring Roddy Ricch</p>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="buy">Купить</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img src="загружено.jpg" class="img">
+		</div>		
+	</div>
+</div>
+<!--  -->
